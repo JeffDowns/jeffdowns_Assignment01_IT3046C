@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Jeff Downs - IT3046C</title>
+    <script>
+        function displayContent(id) {
+            document.getElementById(id).style.visibility = 'visible';
+            document.getElementById('showAbout').style.visibility = 'visible';
+        }
+    </script>
+    <link href="assets/css/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <h1>Jeffrey <span>Downs</span></h1>
+    </div>    
+        <div class="content">
+            <div class="box">
+                <div class="box-top">Welcome</div>
+                <div class="box-content">
+                    <div id="imageHolder" style="visibility: hidden">
+                        <img src="assets/img/profilePic.jpg" />
+                    </div>
+                    <input type="button" id="showPicture" value="Show Image" onclick="displayContent('imageHolder');" />
+                    <input type="button" id="showAbout" value="Show Content" onclick="displayContent('aboutParagraph');" style="visibility: hidden"
+                    />
+                    <div id="aboutParagraph" style="visibility: hidden">
+                        <p>Hello, my name is Jeffrey Downs and I am a sophomore at UC.
+                            This will be one of 4 classes I need to complete my associates degree in Information Technology.
+                            In my spare time I enjoy going to concerts, developing simple websites, and watching youtube
+                            videos about, pretty much. everything.
+                            Because of my love of learning, I look forward to the assignments this class (IT3046C) will offer. I hope to learn more about JavaScript than what I have already taught myself.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
